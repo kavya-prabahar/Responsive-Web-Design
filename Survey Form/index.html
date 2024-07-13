@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+
+  <body>
+    <div class="one">
+    <br>
+    <h1 id="title">Summer Training Survey Form</h1>
+
+    <p id="description"><b>We appreciate your feedback on our summer training program. <br>
+    Your insights will help us enhance the experience for future participants.</b></p>
+    
+
+    <div class="container">
+
+    <div class="form">
+
+      <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+
+      <div class="details">
+
+      <div class = "form-details">
+      <label for="name" id="name-label">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" autofocus required class = "form-input"><br>
+      </div>
+      
+      <div class = "form-details">
+      <label for="email" id="email-label">Email</label><br>
+      <input type="email" id="email" name="email" required placeholder="Enter your email" class = "form-input"><br>
+      </div>
+      
+      <div class = "form-details">
+      <label for="number" id="number-label">Age<small>(optional)</small></label><br>
+      <input type="number" id="number" name="number" required placeholder="Enter your age" min="10" max="120" class = "form-input"><br>
+      </div>
+      </div>
+
+      <div class="choices">
+
+      <div class = "form-choices">
+      <label for="dropdown" id="role-label">Which option best describes your current role?</label><br>
+      <select id="dropdown">
+        <option value="Select current role">Select current role</option>
+        <option value="Student">Student</option>
+        <option value="Intern">Intern</option>
+        <option value="Full time employee">Full time employee</option>
+        <option value="Part time employee">part time employee</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+      </select>
+      </div>
+
+      <div class = "form-choices">
+      <label id="satisfaction">How satisfied are you with the training?</label><br><br>
+
+      <input type="radio" value="very satisfied" id="very-satisfied" class = "satisfaction-level" checked name = "radio">
+      <label for="very-satisfied" class = "satisfaction-level">Very Satisfied</label>
+      <br>
+      <input type="radio" value="satisfied" id="satisfied" class = "satisfaction-level" name = "radio">
+      <label for="satified" class = "satisfaction-level">Satisfied</label>
+      <br>
+
+      <input type="radio" value="neutral" id="neutral" class = "satisfaction-level" name = "radio">
+      <label for="neutral" class = "satisfaction-level">Neutral</label>
+      <br>
+
+      <input type="radio" value="dissatisfied" id="dissatisfied" class = "satisfaction-level" name = "radio">
+      <label for="dissatisfied" class = "satisfaction-level">Dissatisfied</label>
+      <br>
+
+      <input type="radio" value="very dissatisfied" id="very-dissatisfied" class = "satisfaction-level" name = "radio">
+      <label for="very-dissatisfied" class = "satisfaction-level">Very Dissatisfied</label>
+      <br>
+
+      </div>
+
+      <div class = "form-choices">
+        <label for="dd" id="dd-label">What is your favorite aspect of the summer training program?</label>
+
+      <select id="dd">
+        <option value="Select one option">Select one option</option>
+        <option value="Hands-on Projects">Hands-on Projects</option>
+        <option value="Live Sessions">Live Sessions</option>
+        <option value="Mentor Support">Mentor Support</option>
+        <option value="Study Materials">Study Materials</option>
+      </select>
+      </div>
+
+      <div class = "form-choices">
+      <label id="improve-label">What would you like to see improved? <small>(Check all that apply)</small></label><br><br>
+      <input type="checkbox" name="Front-end Projects" value="Front-end Projects"> 
+      <label  class ="form-checkbox"> Front-end Projects</label> 
+      <br>
+
+      <input type="checkbox" name="Back-end Projects" value="Back-end Projects" class ="form-checkbox">
+      <label  class ="form-checkbox"> Back-end Projects </label>
+      <br>
+
+      <input type="checkbox" name="Data Visualization" value="Data Visualization" class ="form-checkbox">
+      <label  class ="form-checkbox"> Data Visualization </label>
+      <br>
+
+      <input type="checkbox" name="Challenges" value="Challenges" class ="form-checkbox" >
+      <label  class ="form-checkbox">Challenges</label>
+      <br>
+
+      <input type="checkbox" name="Open Source Community" value="Open Source Community" class ="form-checkbox">
+      <label  class ="form-checkbox">Open Source Community</label>
+      <br>
+
+      <input type="checkbox" name="Gitter help rooms" value="Gitter help rooms" class ="form-checkbox">
+      <label  class ="form-checkbox">Gitter help rooms</label>
+      <br>
+
+      <input type="checkbox" name="Videos" value="Videos" class ="form-checkbox">
+      <label  class ="form-checkbox">Videos</label>
+      <br>
+
+      <input type="checkbox" name="City Meetups" value="City Meetups" class ="form-checkbox">
+      <label  class ="form-checkbox">City Meetups</label>
+      <br>
+
+      <input type="checkbox" name="Wiki" value="Wiki" class ="form-checkbox">
+      <label  class ="form-checkbox">Wiki</label>
+      <br>
+
+      <input type="checkbox" name="Forum" value="Forum" class ="form-checkbox">
+      <label  class ="form-checkbox">Forum</label>
+      <br>
+
+      <input type="checkbox" name="Additional Courses" value="Additional Courses" class ="form-checkbox">
+      <label  class ="form-checkbox">Additional Courses</label>
+
+      </div>
+      </div>
+
+      <div class="additional">
+        <label for="message" id="additional" >Any comments or suggestions?</label>
+        <br>
+        <br>
+        <textarea id="message" width="1000px" height="100px" >Enter your suggestions here </textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+          </form>
+          </div>
+          </div>
+          </div>
+  </body>
+</html>
+
